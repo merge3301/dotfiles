@@ -1,0 +1,17 @@
+CompileFlags:
+    Add:
+        - -I/home/artyom/
+        - -std=c++20
+        - -Wall
+        - -Wextra
+        - -Wpedantic
+    Remove:
+        - -Wmissing-prototypes
+
+Diagnostics:
+    ClangTidy:
+        # Add: [performance*, modernize*]
+        Add: [performance*, modernize*, readability*]
+
+Index:
+    Background: Build

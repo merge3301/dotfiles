@@ -1,0 +1,57 @@
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+button {
+	text-decoration-color: #FFFFFF;
+    color: transparent;
+    border-radius: 20px;
+    text-shadow: none;
+    margin: 8px;
+    border: 1px solid #252530;
+    background-color: #181825;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 22%;
+    transition: all 0.2s ease-in-out;
+}
+
+button:focus, button:active {
+	background-color: #181825;
+	outline-style: none;
+}
+
+button:hover {
+    background-color: #181825;
+    outline-style: none;
+    background-size: 27%;
+}
+
+#lock {
+    background-image: image(url("/home/artyom/.config/wlogout/icons/lock_white.png"), url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("/home/artyom/.config/wlogout/icons/logout_white.png"), url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+}
+
+#suspend {
+    background-image: image(url("/home/artyom/.config/wlogout/icons/suspend_white.png"), url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+    background-image: image(url("/home/artyom/.config/wlogout/icons/hibernate_white.png"), url("/usr/share/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+    background-image: image(url("/home/artyom/.config/wlogout/icons/shutdown_white.png"), url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("/home/artyom/.config/wlogout/icons/reboot_white.png"), url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+}

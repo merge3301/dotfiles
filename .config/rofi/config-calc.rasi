@@ -1,0 +1,29 @@
+configuration {
+  modi: "calc";
+  font: "JetBrainsMono Nerd Font 16px";
+  show-icons: false;
+  terminal: "kitty";
+  location: 0;
+  disable-history: true;
+  sidebar-mode: false;
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+}
+@theme "cat-mocha"
+
+window {
+  padding: 0.5em 0.5em;
+  width: 15em;
+}
+
+entry {
+  placeholder: "";
+  horizontal-align: 0.5;
+}
+
+listview {
+  enabled: false;
+}
+

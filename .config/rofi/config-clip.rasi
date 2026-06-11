@@ -1,0 +1,14 @@
+configuration {
+  modi: "drun";
+  font: "JetBrainsMono Nerd Font 16px";
+  show-icons: false;
+  location: 0;
+  hide-scrollbar: true;
+  disable-history: true;
+  sidebar-mode: false;
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+}
+@theme "cat-mocha"

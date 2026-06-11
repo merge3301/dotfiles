@@ -1,0 +1,3 @@
+#!/bin/bash
+
+pkill -SIGRTMIN+8 waybar

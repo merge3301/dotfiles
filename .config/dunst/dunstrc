@@ -1,0 +1,108 @@
+[global]
+    ### Display ###
+    monitor = 0
+    follow = mouse
+
+    ### Geometry ###
+    width = 400
+    height = (0, 110)
+    origin = top-right
+    offset = (8, 8)
+    scale = 0
+    notification_limit = 0
+
+    ### Progress bar ###
+    progress_bar = true
+    progress_bar_height = 8
+    progress_bar_frame_width = 1
+    progress_bar_min_width = 450
+    progress_bar_max_width = 450
+
+    indicate_hidden = yes
+    transparency = 0
+    separator_height = 2
+    padding = 12
+    horizontal_padding = 12
+    text_icon_padding = 8
+    frame_width = 1
+    frame_color = "#89B4FA"
+    gap_size = 5
+    separator_color = frame
+    sort = yes
+    idle_threshold = 120
+
+    ### Text ###
+
+    font = RobotoMono Nerd Font Mono Medium 11
+
+    line_height = 6
+    markup = full
+    format = "<big>%s</big>\n%b"
+    alignment = left
+    vertical_alignment = center
+    show_age_threshold = -1
+    ellipsize = end
+    ignore_newline = yes
+    stack_duplicates = true
+    hide_duplicate_count = true
+    show_indicators = no
+
+    ### Icons ###
+
+    enable_recursive_icon_lookup = true
+    icon_theme = Papirus
+    icon_position = off
+    min_icon_size = 64 
+    max_icon_size = 64
+    icon_path = /usr/share/icons/Papirus/64x64/devices/:/usr/share/icons/Papirus/64x64/apps/:/usr/share/icons/Papirus/64x64/places/:/usr/share/icons/Papirus/64x64/mimetypes:/usr/share/icons/Papirus/64x64/categories:
+
+    ### History ###
+
+    sticky_history = yes
+    history_length = 20
+
+    ### Misc/Advanced ###
+
+    always_run_script = true
+
+    title = Dunst
+
+    class = Dunst
+
+    corner_radius = 4
+
+    ignore_dbusclose = false
+
+    ### Wayland ###
+
+    force_xwayland = false
+
+    ### mouse
+
+    mouse_left_click = remove_current
+    mouse_middle_click = close_all
+    mouse_right_click = remove_current
+
+    script = /home/artyom/.config/waybar/scripts/update_notificatons.sh
+
+[experimental]
+    per_monitor_dpi = false
+
+[urgency_low]
+    background = "#1E1E2E"
+    foreground = "#CDD6F4"
+    timeout = 10
+
+[urgency_normal]
+    background = "#1E1E2E"
+    foreground = "#CDD6F4"
+    timeout = 15
+
+[urgency_critical]
+    background = "#1E1E2E"
+    foreground = "#CDD6F4"
+    frame_color = "#FAB387"
+    timeout = 0
+
+[fullscreen_delay_everything]
+    fullscreen = delay
