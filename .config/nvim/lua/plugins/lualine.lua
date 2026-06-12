@@ -17,7 +17,7 @@ return {
                     lualine_a = { "mode" },
                     lualine_b = { "branch" },
                     lualine_c = { "diff" },
-                    lualine_x = { "filename" },
+                    lualine_x = { "macro-recording", "%S" },
                     lualine_y = { "diagnostics" },
                     lualine_z = { "progress" },
                 },

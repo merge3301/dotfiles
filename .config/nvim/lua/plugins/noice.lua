@@ -14,6 +14,9 @@ return {
     config = function()
         require("noice").setup({
             cmdline = {
+                format = {
+                    filter = false,
+                },
                 enabled = true,
                 view = "cmdline_popup",
                 opts = {},

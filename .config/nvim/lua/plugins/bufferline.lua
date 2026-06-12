@@ -7,7 +7,7 @@ return {
             options = {
                 mode = "buffers",
                 numbers = "none",
-                separator_style = "none",
+                separator_style = { "", "" },
                 show_buffer_close_icons = false,
                 show_close_icon = false,
                 always_show_bufferline = true,

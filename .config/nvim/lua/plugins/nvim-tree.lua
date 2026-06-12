@@ -6,6 +6,9 @@ return {
         vim.g.loaded_netrwPlugin = 1
 
         require("nvim-tree").setup({
+            git = {
+                enable = false,
+            },
             sort = { sorter = "case_sensitive" },
             view = { width = 30 },
             renderer = { group_empty = true },

@@ -20,7 +20,7 @@ return {
     end,
     keys = {
         {
-            "<leader>s",
+            "<leader>r",
             function()
                 require("persistence").load({ last = true })
             end,

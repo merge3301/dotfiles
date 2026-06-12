@@ -30,16 +30,21 @@ vim.opt.termguicolors = false
 vim.opt.background = "dark"
 vim.cmd("colorscheme onedark")
 
+-- Interface
+vim.opt.guicursor = "t-i:ver30"
+-- vim.opt.guicursor = "t-i:ver30,a:blinkwait4000-blinkon2000-blinkoff2000"
 vim.opt.shortmess:append("S")
 vim.opt.listchars = { tab = "> ", trail = "·" }
 vim.opt.fillchars:append({ eob = " " })
 vim.opt.conceallevel = 3
-vim.opt.clipboard = "unnamedplus"
 vim.opt.relativenumber = true
 vim.opt.number = true
+vim.opt.cmdheight = 0
+
+vim.opt.clipboard = "unnamedplus"
 vim.opt.ruler = true
 vim.opt.timeoutlen = 500
 vim.opt.ttimeoutlen = 10
 vim.opt.mouse = ""
-vim.opt.cmdheight = 0
-vim.opt.showcmd = false
+vim.opt.showcmd = true
+vim.opt.showcmdloc = "statusline"

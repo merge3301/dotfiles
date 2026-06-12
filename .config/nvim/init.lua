@@ -31,6 +31,7 @@ require("lazy").setup({
     { import = "plugins.nvim-cmp" },
     { import = "plugins.dashboard" },
     { import = "plugins.nvim-treesitter" },
+    { import = "plugins.toggleterm" },
 })
 
 require("core.keymaps")
