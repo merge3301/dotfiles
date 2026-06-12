@@ -26,10 +26,11 @@ require("lazy").setup({
     { import = "plugins.noice" },
     { import = "plugins.bufferline" },
     { import = "plugins.persistence" },
-    { import = "plugins.which-key" },
+    -- { import = "plugins.which-key" },
     { import = "plugins.lspconfig" },
     { import = "plugins.nvim-cmp" },
     { import = "plugins.dashboard" },
+    { import = "plugins.nvim-treesitter" },
 })
 
 require("core.keymaps")
