@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Paths
-DEFAULT_PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/bin:/opt/local/bin"
-export PATH="$DEFAULT_PATH"
-
 # History
 HISTFILE=$HOME/.bash_history
 HISTSIZE=1000

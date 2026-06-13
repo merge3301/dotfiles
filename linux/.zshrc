@@ -1,7 +1,3 @@
-# Paths
-DEFAULT_PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/bin:/opt/local/bin"
-export PATH="$DEFAULT_PATH"
-
 # History
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=1000
