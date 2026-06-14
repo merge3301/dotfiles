@@ -1,3 +1,17 @@
+set --global --export HOMEBREW_PREFIX "/opt/homebrew"
+set --global --export HOMEBREW_CELLAR "/opt/homebrew/Cellar"
+set --global --export HOMEBREW_REPOSITORY "/opt/homebrew"
+fish_add_path --global --move --path "/opt/homebrew/bin" "/opt/homebrew/sbin"
+
+if test -n "$MANPATH[1]"
+    set --global --export MANPATH '' $MANPATH
+end
+
+if not contains "/opt/homebrew/share/info" $INFOPATH
+    set --global --export INFOPATH "/opt/homebrew/share/info" $INFOPATH
+end
+
+
 function fish_prompt
     set -l git_branch ""
     if git rev-parse --git-dir >/dev/null 2>&1
@@ -32,7 +46,6 @@ alias grep="grep --color=auto"
 
 # Utils
 alias n="nvim"
-alias open="xdg-open"
 alias fetch-music='yt-dlp --cookies-from-browser firefox -x --audio-format mp3 --embed-thumbnail --add-metadata -o "/home/artyom/Music/%(playlist_title)s/%(title)s.%(ext)s"'
 
 # Git aliases
@@ -51,11 +64,6 @@ alias gstl="git stash list"
 alias gl="git log --graph --oneline --decorate --all"
 alias gd="git diff"
 
-if test (tty) = "/dev/tty1" -a -z "$HYPRLAND_INSTANCE_SIGNATURE"
-    sleep 1
-    exec start-hyprland
-end
-
 function y
     set tmp (mktemp -t "yazi-cwd.XXXXXX")
     command yazi $argv --cwd-file="$tmp"
@@ -64,3 +72,4 @@ function y
     end
     command rm -f -- "$tmp"
 end
+
