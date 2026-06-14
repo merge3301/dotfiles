@@ -47,7 +47,7 @@
     "window.restoreWindows": "none",
 
     "clang-format.executable": "clang-format",
-    "clang-format.style": "file:/home/artyom/.clang-format",
+    "clang-format.style": "file:~/.clang-format",
 
     "extensions.ignoreRecommendations": true,
     "breadcrumbs.enabled": false,
