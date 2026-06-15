@@ -12,6 +12,7 @@ return {
             html = { "prettierd", "prettier" },
             css = { "prettierd", "prettier" },
             json = { "prettierd", "prettier" },
+            toml = { "taplo" },
         },
         format_on_save = {
             timeout_ms = 500,

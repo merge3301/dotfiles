@@ -12,6 +12,7 @@ return {
             "clang-format",
             "prettierd",
             "prettier",
+            "taplo",
         },
         auto_update = true,
         run_on_start = true,

@@ -1,0 +1,19 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:no-status"
+rev = "598cdb6"
+hash = "3e023d31f29201efdac2a6ae35fedb78"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:zoom"
+rev = "598cdb6"
+hash = "fa268cb59989a87780605fdcfb8d99a9"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+rev = "598cdb6"
+hash = "187cc58ba7ac3befd49c342129e6f1b6"
+
+[[flavor.deps]]
+use = "BennyOe/onedark"
+rev = "668d71d"
+hash = "1e647ba2d7c6e6f2bafe858ad9a4e50a"
