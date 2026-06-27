@@ -11,6 +11,7 @@ if not contains "/opt/homebrew/share/info" $INFOPATH
     set --global --export INFOPATH "/opt/homebrew/share/info" $INFOPATH
 end
 
+set -gx EDITOR "nvim"
 
 function fish_prompt
     set -l git_branch ""
@@ -46,7 +47,7 @@ alias grep="grep --color=auto"
 
 # Utils
 alias n="nvim"
-alias fetch-music='yt-dlp --cookies-from-browser firefox -x --audio-format mp3 --embed-thumbnail --add-metadata -o "/home/artyom/Music/%(playlist_title)s/%(title)s.%(ext)s"'
+alias fetch-music='yt-dlp -x --audio-format mp3 --embed-thumbnail --add-metadata -o "/Users/artyom/Music/Downloads/%(playlist_title)s/%(title)s.%(ext)s"'
 
 # Git aliases
 alias gi="git init"
